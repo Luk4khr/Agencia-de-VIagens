@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Agencia de Viagem</title>
+    <meta name="description" content="Uma paginá d Agencia de Viagens"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&amp;display=swap">
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+    <!--Topo-->
+
+    <header>
+        <img src="Assets/local-logo.png" alt="Logo">
+        <h1>Agência de Viagens</h1>
+    </header>
+
+    <!--Principal-->
+    
+    <main>
+        <section class="banner">
+            <div class="formm">
+                <div class="logopink">
+                    <p> <h2>Solicite um orçamento</h2> </p>
+                </div>
+                <div>
+                    <h3 class="formm1">Informe seus dados</h3>
+                    <Form method="post" action="">
+                        <div>
+                            <label for="Nome">Nome</label>
+                        </div>
+                        <div>
+                            <input id="Nome" type="text" name="nome" placeholder="Nome completo" required>
+                        </div>
+                        <div>
+                            <label for="mail">Email</label>
+                        </div>
+                        <div>
+                            <input id="mail" type="email" name="email" placeholder="Email para contato" required>
+                        </div>
+                        <div>
+                            <label for="tel">Celular</label>
+                        </div>
+                        <div>
+                            <input id="tel" type="tel" name="Tel" placeholder="(xx) xxxxx-xxxx" required>
+                        </div>
+                        <div class="datas">
+                            <div class="data12">
+                                <div class="div2">
+                                    <div>
+                                    <div>
+                                        <label for="date">Data da ida</label>
+                                    </div>
+                                    <div>
+                                        <input class="data13" id="date" type="date" name="data1" placeholder="dd/mm/aaaa" required>
+                                    </div>
+                                    <div>
+                                        <label for="Origem">Origem</label>
+                                    </div>
+                                    <div>
+                                        <select name="Origem" id="Origem">
+                                            <option value="--">Partindo de</option>
+                                            <option value="Brasil">Brasil</option>
+                                        </select>
+                                    </div></div>
+                                </div>
+                        
+                        
+                            <div class="div1">
+                                <div>
+                                <div>
+                                     <label for="date2">Data da volta</label>
+                                </div>
+                                 <div>
+                                    <input class="data13" id="date2" type="date" name="data2" placeholder="dd/mm/aaaa">
+                                </div>
+                               </div>
+                               <div>
+                                <div>
+                                    <label for="Destino">Destino</label>
+                                </div>
+                                <div>
+                                    <select name="destino">
+                                      <option value="--">Indo para</option>
+                                      <option value="Brasil">Brasil</option>
+                                    </select>
+                                </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <div class="peppa">
+                            <h3>Quarto com cama infantil?</h3>
+                        <div class="cama1">
+                            <input id="cama1" type="radio" name="cama" value="sim" required>
+                            <label for="cama1">Sim</label>
+                            <input id="cama2" type="radio" name="cama" value="nao" required>
+                            <label for="cama2">Não</label>
+                        </div>
+                        <h3 class="h33">Preferências da hospedagem</h3>
+                        <div class="cama2">
+                            <input id="piscina" type="checkbox" name="hospedagem[]" value="piscina">
+                            <label for="piscina">Piscina</label>
+                            <input id="wi fi" type="checkbox" name="hospedagem[]" value="wi fi">
+                            <label for="wi fi">Wi-Fi</label>
+                            <input id="garagem" type="checkbox" name="hospedagem[]" value="garagem">
+                            <label for="garagem">Garagem</label>
+                            <input id="suite" type="checkbox" name="hospedagem[]" value="suite">
+                            <label for="suite">Suite</label>
+                        </div>
+                        <button type="submit">Solicitar orçamento</button>
+                        </div>
+                    </Form>
+                </div>
+            </div>
+        </section>
+        <section class="titcard">
+            <h3>Ofertas</h3>
+            <p>Com até <strong>50%</strong> de desconto</p>
+            <figure>
+                
+                <div class="cards">
+                    <img class="imgprin" src="Assets/rio.jpg" alt="Rio">
+                    <figcaption class="fig1">Rio de Janeiro</figcaption>
+                    <div class="cards4">
+                    <div class="cards3">
+                        <div class="cards1">
+                        <img src="Assets/manaus.jpg" alt="Manaus">
+                        <figcaption class="fig2">Manaus</figcaption>
+                        <img src="Assets/saopaulo.jpg" alt="SP">
+                        <figcaption class="fig3">São Paulo</figcaption>
+                    </div>
+                    <div class="cards2">
+                        <img src="Assets/niteroi.jpg" alt="Niteroi">
+                        <figcaption class="fig4">Rio de Janeiro</figcaption>
+                        <img src="Assets/maranhao.jpg" alt="Maranhão">
+                        <figcaption class="fig5">Maranhão</figcaption>
+                    </div>
+                    </div>
+                </div>
+            </figure>
+            <h3>Explore a Natureza</h3>
+            <p>Viaje conosco e veja o melhor que a natureza tem a oferecer.</p>
+            <figure class="cardsec2">
+                <div>
+                    <img class="lencois" src="Assets/lencol.jpg" alt="Lençois">
+                    <figcaption><Strong>Lençois Maranhenses, Brasil</Strong></figcaption>
+                    <figcaption>Ida e volta a partir de R$79</figcaption>
+                </div>
+                <div>
+                    <img class="cachoei" src="Assets/goias.jpg" alt="Goias">
+                    <figcaption><strong>Cachoeira Santa Bárbara, Brasil</strong></figcaption>
+                    <figcaption>Ida e volta por R$139</figcaption>
+                </div>
+            </figure>
+        </section>
+    </main>
+    <footer class="rodape">
+        
+            <div class="peppapig">
+                <h3><strong>Contato</strong></h3>
+                <p class="RIO">Rio de Janeiro, RJ</p>
+                <p class="TEL">Telefone: (21) 9999-9999</p>
+                <p class="MAIL">Email: contato@agencia.com.br</p>
+            </div>
+            <div class="peppapig2">
+                <h3><strong>Nossas Redes Sociais</strong></h3>
+                <p class="FACE">/AgenciaDeViagem</p>
+                <p class="INSTA">@AgenciaDeViagem</p>
+                <p class="TWI">@AgenciaDeViagem</p>
+            
+        </div>
+    </footer>
+</body>
+</html>
